@@ -1,0 +1,12 @@
+.widgth-limiter-horizontal {
+  display: flex;
+  flex-direction: row;
+  width: 50rem;
+  margin: auto;
+}
+
+.widgth-limiter-vertical {
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+}

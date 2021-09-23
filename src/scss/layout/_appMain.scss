@@ -1,0 +1,28 @@
+html {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+body {
+  margin: 0rem;
+  padding: 0rem;
+  color: lime;
+}
+
+.appMain-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.appMain-container-home {
+  @extend .appMain-container;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.993),
+      rgba(0, 0, 0, 0.808),
+      rgb(0, 0, 0)
+    ),
+    url("../../img/background01.jpg");
+  background-size: cover;
+}
