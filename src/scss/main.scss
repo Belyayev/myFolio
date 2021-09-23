@@ -1,5 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Gemunu+Libre:wght@500&family=Share+Tech+Mono&display=swap");
+
+@import "utils/variables.scss";
+@import "utils/utilities.scss";
+
+@import "layout/body.scss";
 @import "layout/appMain.scss";
 @import "layout/header.scss";
-@import "layout/body.scss";
-
-@import "utils/utilities.scss";
+@import "layout/home.scss";

@@ -1,12 +1,16 @@
 .widgth-limiter-horizontal {
   display: flex;
   flex-direction: row;
-  width: 50rem;
+  justify-content: center;
+  width: 90%;
+  max-width: 60rem;
   margin: auto;
 }
 
 .widgth-limiter-vertical {
   display: flex;
   flex-direction: column;
-  width: 50rem;
+  width: 90%;
+  max-width: 60rem;
+  padding: 1rem;
 }

@@ -3,5 +3,21 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 3rem;
+  height: 4rem;
+  font-family: "Share Tech Mono", monospace;
+  letter-spacing: 0.2rem;
+  font-size: 1.4rem;
+  white-space: nowrap;
+}
+
+.header-menuItem {
+  margin: 0rem 1.5rem;
+  list-style-type: none;
+  // text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    color: white;
+    transform: translateY(-0.1rem);
+  }
 }

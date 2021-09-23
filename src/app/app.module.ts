@@ -1,16 +1,32 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { AuthorComponent } from './author/author.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProjectsComponent,
+    HomepageComponent,
+    AuthorComponent,
+    ContactsComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      { path: 'homepage', component: HomepageComponent },
+      { path: 'projects', component: ProjectsComponent },
+      { path: 'author', component: AuthorComponent },
+      { path: 'contacts', component: ContactsComponent },
+      { path: '**', redirectTo: '/', pathMatch: 'full' },
+    ]),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

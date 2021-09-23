@@ -1,15 +1,11 @@
 <div class="appMain-container-home">
   <div class="header">
-    <div class="widgth-limiter-horizontal">
-      <p>item one</p>
-      <p>item two</p>
-      <p>item one</p>
-      <p>item two</p>
-      <p>item one</p>
-      <p>item two</p>
-    </div>
+    <ul class="widgth-limiter-horizontal">
+      <li class="header-menuItem" [routerLink]="['/homepage']">home</li>
+      <li class="header-menuItem" [routerLink]="['/projects']">projects</li>
+      <li class="header-menuItem" [routerLink]="['/author']">authour</li>
+      <li class="header-menuItem" [routerLink]="['/contacts']">contacts</li>
+    </ul>
   </div>
-  <div class="body">
-    <div class="widgth-limiter-vertical">main part</div>
-  </div>
+  <router-outlet></router-outlet>
 </div>
