@@ -5,3 +5,29 @@
   line-height: 2rem;
   color: $color-blue;
 }
+
+.homepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: $color-blue;
+}
+
+.logo {
+  width: 300px;
+  height: 300px;
+  animation-name: rotate;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { ProjectsComponent } from './projects/projects.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { ProjectsComponent } from './projects/projects.component';
 import { AuthorComponent } from './author/author.component';
 import { ContactsComponent } from './contacts/contacts.component';
 
@@ -19,7 +19,7 @@ import { ContactsComponent } from './contacts/contacts.component';
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      { path: 'homepage', component: HomepageComponent },
+      { path: '', component: HomepageComponent },
       { path: 'projects', component: ProjectsComponent },
       { path: 'author', component: AuthorComponent },
       { path: 'contacts', component: ContactsComponent },

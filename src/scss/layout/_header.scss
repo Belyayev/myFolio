@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   height: 4rem;
-  font-family: "Share Tech Mono", monospace;
+  font-family: "Russo One", monospace;
   letter-spacing: 0.2rem;
   font-size: 1.4rem;
   white-space: nowrap;
@@ -13,8 +13,13 @@
 .header-menuItem {
   margin: 0rem 1.5rem;
   list-style-type: none;
-  // text-transform: uppercase;
+  text-transform: uppercase;
   cursor: pointer;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 
   &:hover {
     color: white;
